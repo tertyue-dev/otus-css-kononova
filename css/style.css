@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
 h1, h2, h5 {
     font-family: 'Playfair Display', serif; 
     font-optical-sizing: auto;
@@ -156,40 +162,33 @@ em {
     list-style: none;      
 }
 
-div.Number1 {
-  display: flex;
-  flex-direction: column;
-  min-height: 630px;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
+.first-block {
   position: relative;
-}
-
-div.Number2 {
+  padding: 20px 20px 20px 20px;
+  height: 630px;
+  width: 100%;
+  background-image: url('../img/inside-weather-Uxqlfigh6oE-unsplash-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
-  flex-direction: column;
-  width: 36%;
-  min-height: 360px;
-  background: white;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 400px;
-  left:500px;
-  right:50px; 
-  margin: 0;
+  
 }
 
-.img_head {
-  min-height: auto;
-  width: 100%;
-  margin: 0 auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+div.first-block-text {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  width: 690px;      
+  height: 360px; 
+  padding: 5px 10px 5px 10px;
+  align-items: center;
+  justify-content: center;
 }
 
-div.Number3 {
+div.biography-block {
   display: flex;
   max-width: 100%;
   margin: 0 auto;
@@ -204,11 +203,11 @@ div.Number3 {
      object-fit: cover;
 }
 
-div.Number4 {
+div.biography-block-text1 {
   flex-grow: 1;
 }
 
-div.Number5 {
+div.biography-block-text2 {
   display: flex;
   width: 39%;
   flex-direction: column;
@@ -218,7 +217,7 @@ div.Number5 {
   margin-right: 0;
 }
 
-div.Number6 {
+div.designers-block {
   display: grid;
   width: 100%;
   height: 677px;
@@ -256,7 +255,7 @@ div.Designer3 {
   align-items: center;
 }
 
-div.Number7 {
+div.testimonials-block {
   display: grid;
   width: 100%;
   height: 760px;
@@ -265,8 +264,8 @@ div.Number7 {
   padding-top: 90px;
 }
 
-div.Number7_links {
-grid-column: 1/span 1;
+div.testimonials-block-links {
+  grid-column: 1/span 1;
   padding: 0px;
   margin: 0;
   display: grid;
@@ -286,7 +285,7 @@ grid-column: 1/span 1;
   color: black;
 }
 
-div.Number7_text1 {
+div.testimonials-block-text1 {
 grid-column: 3/span 1;
   padding-top: 0px;
   padding-left: 0px;
@@ -295,7 +294,7 @@ grid-column: 3/span 1;
   padding-top: 80px;
 }
 
-div.Number7_text2 {
+div.testimonials-block-text2 {
  grid-column: 4/span 1;
   padding-top: 0px;
   padding-top: 8px;
@@ -306,7 +305,7 @@ div.Number7_text2 {
   text-align: center;
 }
 
-div.Number8 {
+div.portfolio-block {
 display: flex;
   max-width: 100%;
   height: 570px;
@@ -347,13 +346,13 @@ grid-column: 4/span 1;
        object-fit: cover;
 }
 
-div.Number9 {
+div.list-block {
 grid-column: 3/span 1;
     padding: 0px;
     margin: 0;
 }
 
-.Number9_list {
+.list-block-names {
   text-align: right;
   font-family: "Bitter", serif;
   font-optical-sizing: auto;
