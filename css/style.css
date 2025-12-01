@@ -127,6 +127,7 @@ blockquote.bitter-26 {
     font-style: normal;
     font-size: 26px;
     text-align: left;
+    max-width: 400px;
 }
 
 /* Вторая цитата */
@@ -183,8 +184,8 @@ em {
     font-style: normal;
     color: black;
     font-size: 16px;
-    text-align: left;
-    list-style: none;      
+    list-style: none;  
+    gap: 30px;
 }
 
 .first-block {
@@ -249,8 +250,7 @@ div.designers-block {
   height: 677px;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding-top: 10px;
-  overflow-x: scroll; 
+  padding-top: 10px; 
   white-space: nowrap;
 }
 
@@ -286,8 +286,9 @@ div.testimonials-block {
   width: 100%;
   height: 760px;
   margin: 0 auto;
-  grid-template-columns: 10.12% 38.71% 12.44% 38.71%;
+  grid-template-columns: 1fr 1fr 1fr;
   padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 div.testimonials-block-links {
@@ -302,17 +303,11 @@ div.testimonials-block-links {
 
 .link1 {
   color: black;
-}
-
-.site {
-  transform: rotate(-90deg);
-  margin: 0;
-  padding: 0px;
-  color: black;
+  white-space: nowrap;   
 }
 
 div.testimonials-block-text1 {
-grid-column: 3/span 1;
+  grid-column: 3/span 1;
   padding-top: 0px;
   padding-left: 0px;
   margin: 0;
@@ -321,7 +316,7 @@ grid-column: 3/span 1;
 }
 
 div.testimonials-block-text2 {
- grid-column: 4/span 1;
+  grid-column: 4/span 1;
   padding-top: 0px;
   padding-top: 8px;
   margin: 0;
@@ -332,13 +327,11 @@ div.testimonials-block-text2 {
 }
 
 div.portfolio-block {
-display: flex;
+  display: flex;
   max-width: 100%;
-  height: 570px;
   margin: 0 auto;
   padding-top: 30px;
   gap: 20px;
-  overflow-x: scroll;
   white-space: nowrap;
 }
 
