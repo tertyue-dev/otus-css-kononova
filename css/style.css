@@ -42,11 +42,11 @@ h1, h2, h5 {
 h1 {
     text-align: left;
     font-weight: 600;
+    margin: 0;
 }
 
 h5 {
-    text-align: right;
-    margin: 50px 200px 0px 0px;
+    text-align: left;
 }
 
 /* ===== ROBOTO ===== */
@@ -95,15 +95,22 @@ h4 {
 h4.rotated {
     transform: rotate(270deg);
     display: inline-block;
-    transform-origin: center center;
-    margin: 20px 0;
+    padding: 0px 25px 25px 0px;
+  
+}
+
+h4.rotated-block-testimonials {
+  padding: 0px 0px 60px 40px;
+  transform: rotate(270deg);
+  display: inline-block;
+  margin: 0 auto; 
 }
 
 /* Заголовки слева */
 h4.left-align {
     min-width: max-content; 
     text-align: left;
-    margin: 0px 0px 0px 10px;
+    margin: 0px 0px 0px 165px;
     white-space: nowrap;
 }
 
@@ -111,11 +118,11 @@ h4.left-align {
 h6, p {
     font-family: 'Roboto', sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
     color: black;
     font-size: 18px;
-    text-align: right; 
+    margin: 0px;
 }
 
 /* ===== Цитаты Bitter ===== */
@@ -128,6 +135,7 @@ blockquote.bitter-26 {
     font-size: 26px;
     text-align: left;
     max-width: 400px;
+    margin: 0px;
 }
 
 /* Вторая цитата */
@@ -137,7 +145,8 @@ blockquote.bitter-32 {
     font-weight: 400;
     font-style: normal;
     font-size: 32px;
-    text-align: left;
+    margin: 0px;
+    text-align: center;
 }
 
 /* ===== Modern Web Studio ===== */
@@ -176,16 +185,23 @@ em {
    align-items: center;
 }
 
-#site {
-    font-family: 'Roboto', sans-serif;
-    transform: rotate(270deg);
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    color: black;
-    font-size: 16px;
-    list-style: none;  
-    gap: 30px;
+.site {
+  font-family: 'Roboto', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+  transform: rotate(270deg);
+  transform-origin: center; 
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(270deg);
 }
 
 .first-block {
@@ -217,10 +233,10 @@ div.first-block-text {
 div.biography-block {
   display: flex;
   max-width: 100%;
+  margin-top: 135px;
   margin-left: auto; 
   margin-right: auto;
   box-sizing: border-box;
-  padding-top: 140px;
 }
 
 .img_Katya {
@@ -236,19 +252,17 @@ div.biography-block-text1 {
 
 div.biography-block-text2 {
   display: flex;
-  width: 39%;
   flex-direction: column;
-  padding-left: 30px;
-  padding-top: 100px;
-  padding-right: 0px;
-  margin-right: 0;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 36px;
 }
 
 div.designers-block {
+  margin: 90px 0px 90px 0px;
   display: grid;
   width: 100%;
   height: 677px;
-  margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-top: 10px; 
   white-space: nowrap;
@@ -281,32 +295,38 @@ div.Designer3 {
   align-items: center;
 }
 
-div.testimonials-block {
+.testimonials-block-parent {
   display: grid;
-  width: 100%;
+  grid-template-columns: 98px 451px 28px 526px;
+  width: 1400px;
   height: 760px;
-  margin: 0 auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-
-div.testimonials-block-links {
-  grid-column: 1/span 1;
-  padding: 0px;
-  margin: 0;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  align-items: center;
-  justify-content: center;
+  margin: 90px 0px 90px 0px;
 }
 
 .link1 {
-  color: black;
-  white-space: nowrap;   
+  color: black; 
+  font-weight: 400;
 }
 
-div.testimonials-block-text1 {
+.item1-websites {
+  grid-column: 1;
+  width: 98px;
+  height: 760px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden; 
+  position: relative;
+}
+
+.item2-picture-cafe {
+  grid-column: 2;
+  width: 100%;
+  height: 100%;
+}
+
+
+.item3-text {
   grid-column: 3/span 1;
   padding-top: 0px;
   padding-left: 0px;
@@ -315,7 +335,7 @@ div.testimonials-block-text1 {
   padding-top: 80px;
 }
 
-div.testimonials-block-text2 {
+.item4-quote {
   grid-column: 4/span 1;
   padding-top: 0px;
   padding-top: 8px;
@@ -325,6 +345,11 @@ div.testimonials-block-text2 {
   flex-direction: column;
   text-align: center;
 }
+
+.item5-picture-bag {
+  margin: 42px 0px 0px 0px;
+}
+
 
 div.portfolio-block {
   display: flex;
