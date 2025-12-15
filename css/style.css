@@ -7,7 +7,7 @@ body {
 .center {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0px;
 }
 
 .container-head {
@@ -100,17 +100,17 @@ h4.rotated {
 }
 
 h4.rotated-block-testimonials {
-  padding: 0px 0px 60px 40px;
+  padding: 0px;
+  margin: 0px;
   transform: rotate(270deg);
   display: inline-block;
-  margin: 0 auto; 
 }
 
 /* Заголовки слева */
 h4.left-align {
     min-width: max-content; 
     text-align: left;
-    margin: 0px 0px 0px 165px;
+    margin: 0px 0px 40px 165px;
     white-space: nowrap;
 }
 
@@ -181,7 +181,6 @@ em {
    color: black;
    font-size: 16px; 
    display: flex;
-   justify-content: space-between; 
    align-items: center;
 }
 
@@ -261,11 +260,13 @@ div.biography-block-text2 {
 div.designers-block {
   margin: 90px 0px 90px 0px;
   display: grid;
-  width: 100%;
-  height: 677px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-top: 10px; 
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
   white-space: nowrap;
+  box-sizing: border-box;
 }
 
 div.Designer1 {
@@ -295,12 +296,26 @@ div.Designer3 {
   align-items: center;
 }
 
+div.Designer4 {
+  grid-column: 4/span 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-top: 100px;
+  padding-left: 20px;
+  margin: 0;
+  align-items: center;
+}
+
+.names {
+  margin-top: 20px;
+}
+
 .testimonials-block-parent {
   display: grid;
   grid-template-columns: 98px 451px 28px 526px;
-  width: 1400px;
-  height: 760px;
   margin: 90px 0px 90px 0px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .link1 {
