@@ -4,6 +4,29 @@ body {
     overflow-x: hidden; 
 }
 
+.center {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.container-head {
+   display: flex;
+   justify-content: space-between;
+   width: 1140px;
+   margin: 0 auto; 
+   align-items: center;
+   gap: 20px;
+}
+
+.navigation-head {
+    display: flex;
+    gap: 55px; 
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
 h1, h2, h5 {
     font-family: 'Playfair Display', serif; 
     font-optical-sizing: auto;
@@ -11,17 +34,19 @@ h1, h2, h5 {
     color: black;
     font-size: 86px;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 /* Особые выравнивания */
 h1 {
     text-align: left;
     font-weight: 600;
+    margin: 0;
 }
 
 h5 {
-    text-align: right;
-    margin: 50px 200px 0px 0px;
+    text-align: left;
 }
 
 /* ===== ROBOTO ===== */
@@ -70,15 +95,22 @@ h4 {
 h4.rotated {
     transform: rotate(270deg);
     display: inline-block;
-    transform-origin: center center;
-    margin: 20px 0;
+    padding: 0px 25px 25px 0px;
+  
+}
+
+h4.rotated-block-testimonials {
+  padding: 0px;
+  margin: 0px;
+  transform: rotate(270deg);
+  display: inline-block;
 }
 
 /* Заголовки слева */
 h4.left-align {
     min-width: max-content; 
     text-align: left;
-    margin: 0px 0px 0px 10px;
+    margin: 0px 0px 40px 165px;
     white-space: nowrap;
 }
 
@@ -86,11 +118,11 @@ h4.left-align {
 h6, p {
     font-family: 'Roboto', sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
     color: black;
     font-size: 18px;
-    text-align: right; 
+    margin: 0px;
 }
 
 /* ===== Цитаты Bitter ===== */
@@ -102,6 +134,8 @@ blockquote.bitter-26 {
     font-style: normal;
     font-size: 26px;
     text-align: left;
+    max-width: 400px;
+    margin: 0px;
 }
 
 /* Вторая цитата */
@@ -111,7 +145,8 @@ blockquote.bitter-32 {
     font-weight: 400;
     font-style: normal;
     font-size: 32px;
-    text-align: left;
+    margin: 0px;
+    text-align: center;
 }
 
 /* ===== Modern Web Studio ===== */
@@ -146,20 +181,26 @@ em {
    color: black;
    font-size: 16px; 
    display: flex;
-   justify-content: space-between; 
    align-items: center;
 }
 
-#site {
-    font-family: 'Roboto', sans-serif;
-    transform: rotate(270deg);
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    color: black;
-    font-size: 16px;
-    text-align: left;
-    list-style: none;      
+.site {
+  font-family: 'Roboto', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+  transform: rotate(270deg);
+  transform-origin: center; 
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(270deg);
 }
 
 .first-block {
@@ -191,9 +232,10 @@ div.first-block-text {
 div.biography-block {
   display: flex;
   max-width: 100%;
-  margin: 0 auto;
+  margin-top: 135px;
+  margin-left: auto; 
+  margin-right: auto;
   box-sizing: border-box;
-  padding-top: 140px;
 }
 
 .img_Katya {
@@ -209,23 +251,22 @@ div.biography-block-text1 {
 
 div.biography-block-text2 {
   display: flex;
-  width: 39%;
   flex-direction: column;
-  padding-left: 30px;
-  padding-top: 100px;
-  padding-right: 0px;
-  margin-right: 0;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 36px;
 }
 
 div.designers-block {
+  margin: 90px 0px 90px 0px;
   display: grid;
-  width: 100%;
-  height: 677px;
-  margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding-top: 10px;
-  overflow-x: scroll; 
+  padding-top: 10px; 
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
   white-space: nowrap;
+  box-sizing: border-box;
 }
 
 div.Designer1 {
@@ -255,38 +296,53 @@ div.Designer3 {
   align-items: center;
 }
 
-div.testimonials-block {
-  display: grid;
-  width: 100%;
-  height: 760px;
-  margin: 0 auto;
-  grid-template-columns: 10.12% 38.71% 12.44% 38.71%;
-  padding-top: 90px;
+div.Designer4 {
+  grid-column: 4/span 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-top: 100px;
+  padding-left: 20px;
+  margin: 0;
+  align-items: center;
 }
 
-div.testimonials-block-links {
-  grid-column: 1/span 1;
-  padding: 0px;
-  margin: 0;
+.names {
+  margin-top: 20px;
+}
+
+.testimonials-block-parent {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  align-items: center;
-  justify-content: center;
+  grid-template-columns: 98px 451px 28px 526px;
+  margin: 90px 0px 90px 0px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .link1 {
-  color: black;
+  color: black; 
+  font-weight: 400;
 }
 
-.site {
-  transform: rotate(-90deg);
-  margin: 0;
-  padding: 0px;
-  color: black;
+.item1-websites {
+  grid-column: 1;
+  width: 98px;
+  height: 760px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden; 
+  position: relative;
 }
 
-div.testimonials-block-text1 {
-grid-column: 3/span 1;
+.item2-picture-cafe {
+  grid-column: 2;
+  width: 100%;
+  height: 100%;
+}
+
+
+.item3-text {
+  grid-column: 3/span 1;
   padding-top: 0px;
   padding-left: 0px;
   margin: 0;
@@ -294,8 +350,8 @@ grid-column: 3/span 1;
   padding-top: 80px;
 }
 
-div.testimonials-block-text2 {
- grid-column: 4/span 1;
+.item4-quote {
+  grid-column: 4/span 1;
   padding-top: 0px;
   padding-top: 8px;
   margin: 0;
@@ -305,14 +361,17 @@ div.testimonials-block-text2 {
   text-align: center;
 }
 
+.item5-picture-bag {
+  margin: 42px 0px 0px 0px;
+}
+
+
 div.portfolio-block {
-display: flex;
+  display: flex;
   max-width: 100%;
-  height: 570px;
   margin: 0 auto;
   padding-top: 30px;
   gap: 20px;
-  overflow-x: scroll;
   white-space: nowrap;
 }
 
@@ -363,3 +422,7 @@ grid-column: 3/span 1;
   list-style: none;
   margin: 50px 200px 30px 0px;
 }
+
+
+
+    
