@@ -38,7 +38,6 @@ h1, h2, h5 {
     padding: 0;
 }
 
-/* Особые выравнивания */
 h1 {
     text-align: left;
     font-weight: 600;
@@ -73,7 +72,6 @@ header {
     align-items: center;
     padding: 20px;
 }
-
 /* ===== Заголовки Roboto ===== */
 /* Biography, Designers, Testimonials */
 h4 {
@@ -430,4 +428,42 @@ div.portfolio-block-parent {
      object-fit: cover;
 }
 
-
+@media (max-width: 768px) {
+  .container-head {
+    width: 100%;
+    padding: 0 20px;
+    justify-content: center;
+  }
+  
+  h1 {
+    display: none;
+  }
+  
+  .navigation-head li a {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: block;
+    overflow: hidden;
+    color: transparent;
+  }
+  
+  .navigation-head li:nth-child(1) a::after { content: "B"; }
+  .navigation-head li:nth-child(2) a::after { content: "D"; }
+  .navigation-head li:nth-child(3) a::after { content: "T"; }
+  .navigation-head li:nth-child(4) a::after { content: "S"; }
+  
+  .navigation-head li a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: black;
+  }
+}
