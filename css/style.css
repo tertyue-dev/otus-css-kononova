@@ -1,7 +1,6 @@
 body {
     margin: 0;
-    padding: 0;
-    overflow-x: hidden; 
+    padding: 0; 
 }
 
 .center {
@@ -38,7 +37,6 @@ h1, h2, h5 {
     padding: 0;
 }
 
-/* Особые выравнивания */
 h1 {
     text-align: left;
     font-weight: 600;
@@ -73,7 +71,6 @@ header {
     align-items: center;
     padding: 20px;
 }
-
 /* ===== Заголовки Roboto ===== */
 /* Biography, Designers, Testimonials */
 h4 {
@@ -430,4 +427,192 @@ div.portfolio-block-parent {
      object-fit: cover;
 }
 
+@media (max-width: 768px) {
 
+  .center {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+  h1, h2, h5 {
+    font-size: 40px;
+  }
+  
+  h3 {
+    font-size: 16px;
+  }
+  
+  .container-head {
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  
+  .header-logo {
+    margin-bottom: 15px;
+  }
+  
+  .navigation-head {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  nav li, nav a {
+    font-size: 18px;
+  }
+  
+ 
+  .first-block {
+    height: 400px;
+    padding: 10px;
+  }
+  
+  div.first-block-text {
+    width: 90%;
+    height: 200px;
+  }
+  
+  div.biography-block {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  
+  .img_Katya {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+  }
+  
+  h4.rotated {
+    transform: rotate(0deg);
+    margin: 30px 0;
+    padding: 0;
+  }
+  
+  div.biography-block-text2 {
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  blockquote.bitter-26 {
+    font-size: 20px;
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  div.designers-block {
+    grid-template-columns: 1fr;
+    margin: 50px 0;
+    overflow: visible;
+  }
+  
+  div.Designer1,
+  div.Designer2,
+  div.Designer3,
+  div.Designer4 {
+    grid-column: 1;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .designers-block img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+  
+  h4.left-align {
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .testimonials-block-parent {
+    grid-template-columns: 1fr;
+    margin: 50px 0;
+  }
+  
+  .item1-websites {
+    display: none; 
+  }
+  
+  .item2-picture-cafe {
+    grid-column: 1;
+    margin-bottom: 20px;
+  }
+  
+  .item2-picture-cafe img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .item3-text {
+    grid-column: 1;
+    padding: 0;
+    text-align: center;
+  }
+  
+  h4.rotated-block-testimonials {
+    transform: rotate(0deg);
+    margin: 20px 0;
+  }
+  
+  .item4-quote {
+    grid-column: 1;
+    padding: 20px;
+  }
+  
+  blockquote.bitter-32 {
+    font-size: 24px;
+  }
+  
+  .item5-picture-bag {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto;
+  }
+  
+
+  div.portfolio-block-parent {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 0 0 50px 0;
+    gap: 20px;
+  }
+  
+  .portfolio-block-item1,
+  .portfolio-block-item2,
+  .portfolio-block-item3,
+  .portfolio-block-item4 {
+    grid-column: 1;
+    width: 100%;
+    height: auto;
+  }
+  
+  .portfolio-block-item1-img,
+  .portfolio-block-item2-img,
+  .portfolio-block-item4-img {
+    height: 300px;
+  }
+  
+  .list-block-names {
+    font-size: 24px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  address {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  address a {
+    margin: 5px 0;
+  }
+}
