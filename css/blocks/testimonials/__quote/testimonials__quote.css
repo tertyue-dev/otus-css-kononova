@@ -1,0 +1,9 @@
+.testimonials__quote {
+  grid-column: 4 / span 1;
+  padding-top: 8px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}

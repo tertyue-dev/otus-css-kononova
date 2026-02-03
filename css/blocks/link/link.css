@@ -1,0 +1,6 @@
+.link {
+  color: black;
+  font-weight: 400;
+  text-decoration: none; 
+  transition: opacity 0.3s ease; 
+}

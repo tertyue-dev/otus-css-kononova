@@ -1,0 +1,7 @@
+.testimonials {
+  display: grid;
+  grid-template-columns: 98px 451px 28px 526px;
+  margin: 90px 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
