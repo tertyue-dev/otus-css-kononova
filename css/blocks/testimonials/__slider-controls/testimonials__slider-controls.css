@@ -1,0 +1,10 @@
+.testimonials__slider-controls {
+  grid-column: 1;
+  width: 98px;
+  height: 760px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  position: relative;
+}

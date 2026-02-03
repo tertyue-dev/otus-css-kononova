@@ -1,0 +1,7 @@
+@import url('./blocks/testimonials/testimonials.css');
+@import url('./blocks/testimonials/__slider-controls/testimonials__slider-controls.css');
+@import url('./blocks/testimonials/__image/testimonials__image.css');
+@import url('./blocks/testimonials/__counter/testimonials__counter.css');
+@import url('./blocks/testimonials/__quote/testimonials__quote.css');
+@import url('./blocks/testimonials/__author-photo/testimonials__author-photo.css');
+@import url('./blocks/link/link.css');
